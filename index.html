@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <!--Quello scritto dentro head non è visualizzato sul display ma i metadati servono ad ottimizzare la ricerca sul web della nostra pagina-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <!--max 70 caratteri per il titolo che appare su google-->
+  <title>LucioBnB Case vacanze, appartamenti e camere in affitto</title>
+  <!--max 160 caratteri la descrizione che apparirà su google-->
+  <meta name="description" content="Affitta posti unici in qualsiasi località. Sentiti a casa ovunque tu sia a prezzi convenienti con LucioBnB"/>
+
+
+  <!-- CSS  -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <!--Ho preso questi font che seguono su GOOGLEFONTS e poi li ho applicati sul file style.css per tutto il body,uno, e per il logo,l'altro-->
+
+  <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  
+  <!--reference di www.FONTAWESOME.IO-->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+  
+  <!--Fixed NAVBAR (barra in alto) presa da Materialaize.com e modificata copiando solo i tag con gli id="mobile-demo" dalla navbar chiamata Mobile Collapse Button per ottimizzare la visione su dispositivi mobile-->
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper teal"> <!--colore barra trovato in Materialize.com sezione Color: teal-->
+        <a href="#" class="brand-logo">LucioBnB</a> <!--metto cancelletto al posto di un link, cosi chi clicca sul logo "luciobnb" viene riportato in alto nella pagina web-->
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons menu-icon">menu</i></a>
+        <!--l'icona menu compare solo su cellulare-->
+        <ul class="right hide-on-med-and-down">
+          <!--ul sta per elemento non numerato-->
+          <li><a href="#servizio">Servizio</a></li> <!--Li sta per elemento lista--><!--#servizio in href vuol dire cerca all'interno di questa pagina(#) l'elemento con id="servizio" quando clicco sul bottone "servizio(scritta bianca)"-->
+          <li><a href="#registrazione">Registrati</a></li>
+          <!--#registrazione in href vuol dire cerca all'interno di questa pagina(#) l'elemento  con id="registrazione" quando clicco sul bottone "Registrati(scritta bianca)"-->
+          <li><a href="#Ospita">Ospita</a></li>
+        </ul>
+ 		<!--Questo menu a tendina visibile solo quando siamo su cellulare premendo sull'icona menu a forma di humburger, non funziona perchè abbiamo voluto lasciare il <div> con navbar-fixed. Le due navbar combinate non funzionano bene.-->
+        <ul class="side-nav" id="mobile-demo">		  
+          <li><a href="#servizio">Servizio</a></li> 
+          <li><a href="#registrazione">Registrati</a></li>
+          <li><a href="#Ospita">Ospita</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <!--Questa è la Intro-->
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section-intro no-pad-bot">
+      <!--Section è una classe presa da Materialize.com nella sezione Grid:vai a vedere cosa è-->
+      <div class="container"> 
+       <!--Conteiner è una classe presa da Materialize.com nella sezione Grid: vai a vedere cosa è-->
+        <br><br>
+        <h1 class="header center col s12 m12 white-text text-accent-1">Sentiti a casa. Ovunque tu sia.</h1> <!--colore trovato in Materialize.com sezione Color: la parola text devo aggiungerla io,nel codice del colore non è inclusa-->
+        <div class="row center">
+           <!--Aggiungo subtitle ad haeder per distinguerlo da quello in h1 altrimenti lo "style.css .haeder" modificava anche questa scritta con un 15% di margine-->
+          <h5 class="header-subtitle col s12 light">Prenota in pochi click l'alloggio per la tua prossima destinazione.</h5>
+        </div>
+
+        <div class="row center">
+          <a href="#servizio" class="btn-large waves-effect waves-light red">Scopri come funziona</a><!--#servizio vuol dire cerca all'interno di questa pagina(#) "servizio" quando clicco sul bottone "scopri come funziona"-->
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+
+    <div class="parallax">
+    <img src="SfondoPresoDaUnsplash.jpg" alt="Unsplashed background img 1">
+    </div>
+
+  </div>
+
+ <!--Questa è la lista SERVIZIO-->
+
+  <div id="servizio" class="container"> 
+    <!--Come per Class,lo stesso meccanismo è valido per i selettori di tipo id. Ma con una sola fondamentale differenza:In un documento HTML l’attributo id è usato per identificare in modo univoco un elemento. In pratica, se assegno ad un elemento l’id "servizio", non potrò più usare questo valore nel resto della pagina. Di conseguenza, l’id .servizio{} dichiarato nello style.CSS trasformerà solo quell'elemento specifico. L'attributo class invece posso assegnarlo a più elementi.-->
+    <div class="section-servizio">
+     <!--Section è una classe presa da Materialize.com nella sezione Grid: permette di dividere in colonne lo spazio orizzontale interessato della pagina-->
+      <div class="col-servizio">
+
+
+	      <!--   Icone della lista Servizio   -->
+
+	      <div class="row"> 
+	        <!--Row è una classe presa da materialize che permette di dividere lo spazio orizzontale interessato della pagina in più colonne-->
+	        <div class="col l4 s12 m12">
+	           <!--l4 ed (m12,s12) dicono in quante parti va diviso lo spazio orizzontale su desktop e mobile phone rispettivamente. 4 indica quattro dodicesimi (4/12) perchè l'intero spazio orizz. vale 12-->
+	          <div class="icon-block">
+	            <!--l'elemento <i> si usa per le icone. la classe material-icons è presa da www.material.io/icons ci basta mettere il nome dell'icona (testo bianco) come ad esempio "map"-->
+	            <h2 class="center red-text">
+	            <i class="material-icons">map</i>
+	            </h2>
+	            <h5 class="center">Affitta case e stanze unnegghiè</h5>
+	            <br>
+	            <p class="center red-text light">Trova la bettola che fa al caso tuo.</p>
+	          </div>
+	        </div>
+
+	        <div class="col l4 s12 m12">
+	          <div class="icon-block">
+	            <h2 class="center red-text">
+	            <i class="material-icons">my_location</i>
+	            </h2>
+	            <h5 class="center">Trova i quartieri più vivi e coninvolgenti
+	            </h5>
+	            <br>
+	            <p class="center red-text light">Se tua moglie rompe, è bene stare vicino al bar.</p>
+	          </div>
+	        </div>
+
+	        <div class="col l4 s12 m12">
+	          <div class="icon-block">
+	            <h2 class="center red-text"><i class="material-icons">home</i></h2>
+	            <h5 class="center">Sentiti sempre come a casa tua e stai ganzo</h5>
+	            <br>
+	            <p class="center red-text light">Perchè avere il tuo cesso a portata di mano è sacro.</p>
+	          </div>
+	        </div>
+	      </div>
+	     </div>
+    </div>
+  </div>
+
+ <!--Questa è la lista REGISTRAZIONE-->
+
+  <div id="registrazione" class="parallax-container valign-wrapper">
+   <!--procediamo come abbiamo fatto nella lista servizio-->
+    <div class="section-registrazione no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <!--scrivere col s12 nelle class può essere fondamentale per problemi di spazio tra icona flisht e scritta "sei in cerca..."-->
+          <i class=" col s12 material-icons registrazione-icon">flight</i>
+          <h3 class="col s12 light">Sei in cerca della tua prossima destinazione?</h3>
+          <h5>Registrati per rimanere aggiornato sulla versione Beta.</h5>
+          <!--Andiamo su materialize e nella sezione Form troviamo il componente per far registrare le email cioè i seguente 2 elementi 
+          div-->
+	        <div class="row">
+	            <!--l'offset-l3 (sezione grid su materialize) mi permette di spostare di 3 colonne,e quindi centrare, l'elemento input-->
+	        	<div class="input-field col s12 l6 offset-l3">
+
+					<!-- Begin MailChimp Signup Form -->	
+					<!--Siamo andati su Mailchimp (sito web), ci siamo iscritti e abbiamo creato un form per la registrazione delle email degli iscritti. abbiamo ottenuto i codici html e li abbiamo un po modificati togliendo tutto lo <style> e inserendo il nostro bottone-->		
+					<div id="mc_embed_signup">
+						<form action="http://facebook.us14.list-manage.com/subscribe/post?u=1367e4e41adced5a3b4113a5f&amp;id=6fd08abd01" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">
+						        <!--l'attributo placeholder ci consente di scrivere nel riquadro di registrazione-->
+								<input type="email" value="" name="EMAIL" class="email validate white center black-text" id="mce-EMAIL" placeholder="Inserisci qui la tua email" required>
+								<!--Andiamo a prendere un bottone di Submit da materialize-->
+					            <!--Aggiungiamo poi la classe btn-registrazione dentro  
+					            <button class="..." in modo da poter modificale la larghezza della barra "voglio registrarmi" andando a scrivere sul foglio style.css-->
+								<button class="btn btn-registrazione waves-effect waves-light red" type="submit" name="action">Voglio registrarmi!
+	                            </button>
+						    </div>
+						</form>
+					</div>
+
+					<!--End MailChimp mc_embed_signup-->
+	           
+	        	</div>
+	      	</div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="SfondoUnsplashBlue.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+<!--Questa è la lista OSPITA-->
+
+  <div id="Ospita" class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <i class="col s12 material-icons ospita-icon red-text">place</i>
+
+          <h3 class="col s12">Vuoi affittare la tua casa su LucioBnB?</h3>
+          <h5 class="col s12 ospita-subtitle">Compila il seguente questionario indicando la città, il quartiere ed il numero di camere disponibili. 
+          <br> Ti ricontatteremo entro 24h.</h5>
+          <!--Andiamo a prendere un bottone di Submit da materialize-->
+	      <!--Aggiungiamo poi la classe btn-ospita dentro
+	      <button class="..." in modo da poter modificale la larghezza della barra "Voglio affittare casa!" andando a scrivere sul foglio style.css-->
+	      <!--Il bottone che avevamo lo abbiamo integrato all'interno del TYPEFORM creato su internet (typeform.com)-->
+          <a class="typeform-share col l6 offset-l3 btn btn-ospita waves-effect waves-light red"" href="https://luciobnb.typeform.com/to/EWUsga" data-mode="2" target="_blank">Voglio affittare casa!</a>
+ 		  
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+ <!--Sezione di FOOTER-->
+
+  <footer class="page-footer">
+
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12 center">
+          <h5 class="white-text">Contattaci</h5>
+
+          <!--mailto: permette di associare la propria mail all'icona messa in <i>-->
+          <a href="mailto:luciocipolla@gmail.com" class="social-icon">
+          <!--le icone che seguono sone presa da FONTAWESOME.IO-->
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+
+          <!--l'attributo target="_blank" messo in <a> fa in modo di aprire in una nuova scheda il link in href quando clicco sull'icona di facebook-->
+          <a href="https://www.facebook.com/lucio.cipolla.7" target="_blank" class="social-icon">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://twitter.com/Lucio_Cipolla" target="_blank" class="social-icon">
+		  <i class="fa fa-twitter-square" aria-hidden="true"></i>
+		  </a>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-copyright">
+      <div class="container">
+      <!--il simbolo di copyright si fa scrivendo &copy-->
+      2016 &copy <a class="brown-text text-lighten-3" target="_blank" href="http://LucioBnB.io">LucioBnB</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+
+  </body>
+</html>

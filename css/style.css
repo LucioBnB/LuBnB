@@ -1,0 +1,178 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/*Applico stesso font a tutto il body*/
+body {
+  font-family: 'Merienda One', cursive;
+}
+
+/*La virgola mi permette di applicare la modifica a più elementi. 
+Il punto mi specifica la class cui applicare la proprietà*/
+nav ul a,
+nav .brand-logo {
+  color: #f44336;    
+}
+
+/*modifico le dimensioni dei tasti servizio,registrati e ospita*/
+nav ul a {
+  font-size: 1.3em;    
+}
+
+/*Applico un font particolare al solo logo*/
+nav .brand-logo {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+/*Ho aggiunto 50px di spazio a sinistra del logo*/
+nav .brand-logo {
+    padding: 0 0 0 50px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #f44336;
+}
+
+.parallax-container {
+  min-height: 500px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.section-intro {
+  height: 100%;
+  width: 100%;
+}
+
+
+/*Ho creato questa REGOLA per aumentare lo spazio sopra la scritta
+"Sentiti a casa.Ovunque tu sia."*/
+  .header {
+    margin-top: 10%;
+    font-size: 350%;
+  }
+/*em vuol dire elemento base che corrisponde a 14pixel per Materialize*/
+/*Scrivere le dimensioni in % ed em è meglio che in pixel perchè 
+si adatterà la pagina anche sui display di cellulari e tablet*/
+.header-subtitle {
+  margin-top: 7%;
+  font-size: 1.6em;
+}
+
+
+/*le regole che seguono valgono solo per schermi con 
+larghezza massima di tot pixel, cioè tablet e cellulari*/
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+ .col-servizio {
+    height: 100%;
+    width: 100%;
+  }
+
+  .menu-icon {
+  padding: 0 50px 0 5px;
+  }
+}
+
+/* Questa è la sezione SERVIZIO*/
+
+/*dopo aver costruito l'elemento <div class="col-servizio" nella lista
+SERVIZIO, applichiamo questo margine(60px sono circa le dimensioni della
+navbar) perchè prima chillando sul bottone "scopri come funziona"
+si accavallava la navbar con un pezzo della lista servizio*/
+.col-servizio {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.icon-block {
+  padding: 60px 0;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+/*l'ashtag serve ad identificare l'unico id "servizio",in questo
+modo la modifica varrà per tutto l'elemento identificato con "servizio".
+Ma in più abbiamo specificato di modificare solo gli h5 in "servizio"*/
+/*line-height definisce lo spazio di interlinea*/
+#servizio h5 {
+font-size: 2em;
+line-height: 1.2em;
+}
+
+/*siamo nella sezione REGISTRAZIONE*/
+
+.section-registrazione {
+  height: 100%;
+  width: 100%;
+}
+
+.registrazione-icon {
+  margin-top: 85px;
+  font-size: 4.7em;
+}
+/*larghezza pari a 100% dell'elemento <div> in cui è inserito il 
+nostro <button> di registrazione*/
+
+.btn-registrazione {
+  width: 100%
+}
+
+
+/*sezione OSPITA*/
+
+.ospita-icon {
+  margin-top: 80px;
+  font-size: 4.7em;
+}
+
+.ospita-subtitle {
+  font-size: 1.3em;
+  line-height: 1.6em;
+}
+
+.btn-ospita {
+  width: 100%
+}
+
+/*sezione FOOTER*/
+
+footer.page-footer {
+  margin: 0;
+  background-color: #50514f;
+}
+
+.social-icon {
+  font-size: 1.5em;
+  color: #fff;
+  padding: 0 15px;
+}
+
+/*la funzione hover fa si che passando sopra l'icona
+dei social loro si colorino del colore che vogliamo*/
+.social-icon:hover {
+  color: #ef3550
+}
